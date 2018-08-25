@@ -52,7 +52,7 @@ $capabilities = array (
                 )
         ),
 
-        'mod/vpl:extension' => array ( // Allows to submit a vpl assingment late.
+        'mod/vpl:extension' => array ( // Allows to submit a vpl assignment late.
                 'riskbitmask' => 0,
                 'captype' => 'write',
                 'contextlevel' => CONTEXT_MODULE,
