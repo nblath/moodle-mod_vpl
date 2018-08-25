@@ -787,7 +787,7 @@ class mod_vpl {
     function is_submission_period(){
         $now = time();
         $ret = $this->instance->startdate <= $now;
-        return $ret && ($this->instance->duedate == 0 || $this->instance->duedate >= $now);
+        return $ret && ($this->instance->duedate == 0 || $this->instance->duedate >= $now) || $this->has_capability( VPL_OVERRIDE_DUE_DATE ));
     }
 
     /**
