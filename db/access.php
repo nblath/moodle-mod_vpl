@@ -52,6 +52,19 @@ $capabilities = array (
                 )
         ),
 
+        'mod/vpl:extension' => array ( // Allows to submit a vpl assingment late.
+                'riskbitmask' => 0,
+                'captype' => 'write',
+                'contextlevel' => CONTEXT_MODULE,
+                'archetypes' => array (
+                        'guest' => CAP_PROHIBIT,
+                        'teacher' => CAP_PREVENT,
+                        'editingteacher' => CAP_ALLOW,
+                        'coursecreator' => CAP_ALLOW,
+                        'manager' => CAP_ALLOW
+                )
+        ),
+        
         'mod/vpl:grade' => array ( // Allows to grade a vpl submission.
                 'riskbitmask' => RISK_PERSONAL,
                 'captype' => 'write',
